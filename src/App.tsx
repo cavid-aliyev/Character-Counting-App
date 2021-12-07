@@ -1,11 +1,12 @@
 import React from "react";
-import "./App.css";
+import {Counter} from './components'
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
       <h1>Counter app</h1>
-    </div>
+      <Counter/>
+    </>
   );
 };
 
