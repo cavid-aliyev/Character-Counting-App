@@ -4,6 +4,7 @@ import {Counter} from './components'
 const App: React.FC = () => {
   return (
     <main>
+      
       <Counter/>
     </main>
   );
