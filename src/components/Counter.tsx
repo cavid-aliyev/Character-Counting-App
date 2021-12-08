@@ -1,10 +1,18 @@
 import React from "react";
-import Textarea from "./Textarea";
+import { Textarea, Count } from "../components";
+
 
 const Counter: React.FC = () => {
   const [text, setText] = React.useState<string>("");
 
-  return <Textarea value={text} onChange={setText}/>;
+  console.log(text);
+
+  return (
+    <>
+      <Count value={text} />
+      <Textarea value={text} onChange={setText} />
+    </>
+  );
 };
 
 export default Counter;

@@ -3,10 +3,9 @@ import {Counter} from './components'
 
 const App: React.FC = () => {
   return (
-    <>
-      <h1>Counter app</h1>
+    <main>
       <Counter/>
-    </>
+    </main>
   );
 };
 

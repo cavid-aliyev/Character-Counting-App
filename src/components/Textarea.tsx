@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../scss/textare.module.scss";
 
 interface TextareaProps {
   value: string;
@@ -10,7 +11,13 @@ const Textarea: React.FC<TextareaProps> = ({ value, onChange }) => {
     onChange(e.target.value);
   };
 
-  return <textarea value={value} onChange={handleChange} />;
+  return (
+    <textarea
+      className={styles.textarea}
+      value={value}
+      onChange={handleChange}
+    />
+  );
 };
 
 export default Textarea;
