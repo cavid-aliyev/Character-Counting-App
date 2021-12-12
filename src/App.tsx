@@ -1,11 +1,10 @@
 import React from "react";
-import {Counter} from './components'
+import { Counter } from "./components";
 
 const App: React.FC = () => {
   return (
     <main>
-      
-      <Counter/>
+      <Counter />
     </main>
   );
 };
