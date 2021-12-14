@@ -7,7 +7,7 @@ interface TextareaProps {
 }
 
 const Textarea: React.FC<TextareaProps> = ({ value, onChange }) => {
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>): void => {
     onChange(e.target.value);
   };
 
